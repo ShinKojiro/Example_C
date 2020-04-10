@@ -18,6 +18,11 @@ void addNums(int, int);
 //@param int - first number to be added
 //@param int - second number to be added
 
+void subNums(int, int);
+//subNums - subtract two integers
+//@param int - the base number
+//@param int - second number to be subtracted from first number
+
 int main()
 {
 
@@ -30,6 +35,7 @@ int main()
 	cin >> num1 >> num2;
 
 	addNums(num1, num2);
+	subNums(num1, num2);
 
 	return 0;
 }
@@ -44,6 +50,11 @@ void printMessage()
 void addNums(int x, int y)
 {
 	printResult(x + y);
+}
+
+void subNums(int x, int y)
+{
+	printResult(x - y);
 }
 
 void printResult(int total)
